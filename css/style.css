@@ -15,23 +15,19 @@ body {
     font-weight: 400;
     color: #455959;
 }
-
 h1, h2, h3, h4 {
     line-height: 1.4;
 }
-
 h1 {
     font-family: 'Roboto Slab', serif;
     font-size: 2.75em;
     font-weight: 900;
 }
-
 h2 {
     font-family: 'Roboto Slab', serif;
     font-size: 2em;
     font-weight: 700;
 }
-
 h3 {
     font-family: 'Roboto Slab', serif;
     font-size: 1.5em;
@@ -42,7 +38,6 @@ h4 {
     font-size: 1.25em;
     font-weight: 700;
 }
-
 img {
     width: 100%;
 }
@@ -52,7 +47,8 @@ a {
   color: #072126;
   text-decoration: none;
 }
-a:hover {
+a:hover,
+a:focus {
   color: #011526;
   text-decoration: underline;
 }
@@ -61,4 +57,44 @@ a:visited {
 }
 a:active {
   color: #072126;
+  text-decoration: underline;
+}
+
+
+.button {
+    display: inline-block;
+    background-color: #455959;
+    color: #f2f2f2;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #072126;
+    transition: 0.2s opacity;
+    text-decoration: none;
+}
+.button:hover,
+.button:focus {
+    opacity: 0.8;
+    text-decoration: none;
+}
+.button:visited {
+    color: #f2f2f2;
+    text-decoration: none;
+}
+.button:active {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+
+.button.contact {
+    font-weight: 700;
+    background-color: transparent;
+    color: #455959;
+    text-transform: uppercase;
+    border: 2px solid #455959;
+}
+.button.contact:hover {
+    background-color: #455959;
+    color: #f2f2f2;
 }
