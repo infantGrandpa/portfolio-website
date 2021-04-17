@@ -6,8 +6,25 @@ lightBlue: #455959;
 tan: #F2E1AA;
 offWhite: #f2f2f2;
 
+NEW
+navy: #011B30;
+blueGreen: #092C33;
+lightBlue: #455959;
+tan: #F2E1AA;
+offWhite: #f2f2f2;
+
+
 */
 
+* {
+    box-sizing: border-box;
+}
+header {
+    background-color: #455959;
+    color: #f2f2f2;
+    padding: 10px;
+    border-bottom: 3px solid #072126;
+}
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #f2f2f2;
@@ -62,6 +79,29 @@ a:visited {
 a:active {
   color: #092C33;
   text-decoration: underline;
+}
+
+.container {
+    padding: 0 15px;
+}
+.row {
+    margin: 25px 0;
+}
+
+#hero {
+    text-align:center;
+}
+
+#hero span {
+
+}
+
+
+
+
+#work .row {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #455959;
 }
 
 
