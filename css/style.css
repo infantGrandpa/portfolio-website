@@ -1,9 +1,9 @@
 /*
 
-navy: #011526;
-blueGreen: #072126;
+navy: #022340;
+blueGreen: #092C33;
 lightBlue: #455959;
-tan: #f2eddc;
+tan: #F2E1AA;
 offWhite: #f2f2f2;
 
 */
@@ -22,21 +22,25 @@ h1 {
     font-family: 'Roboto Slab', serif;
     font-size: 2.75em;
     font-weight: 900;
+    color: #022340;
 }
 h2 {
     font-family: 'Roboto Slab', serif;
     font-size: 2em;
     font-weight: 700;
+    color: #092C33;
 }
 h3 {
     font-family: 'Roboto Slab', serif;
     font-size: 1.5em;
     font-weight: 700;
+    color: #092C33;
 }
 h4 {
     font-family: 'Roboto Slab', serif;
     font-size: 1.25em;
     font-weight: 700;
+    color: #092C33;
 }
 img {
     width: 100%;
@@ -44,31 +48,31 @@ img {
 
 
 a {
-  color: #072126;
+  color: #092C33;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #011526;
+  color: #022340;
   text-decoration: underline;
 }
 a:visited {
   color: #455959;
 }
 a:active {
-  color: #072126;
+  color: #092C33;
   text-decoration: underline;
 }
 
 
 .button {
     display: inline-block;
-    background-color: #455959;
+    background-color: #092C33;
     color: #f2f2f2;
     font-weight: 400;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid #072126;
+    border-bottom: 2px solid #022340;
     transition: 0.2s opacity;
     text-decoration: none;
 }
@@ -90,11 +94,16 @@ a:active {
 .button.contact {
     font-weight: 700;
     background-color: transparent;
-    color: #455959;
+    color: #092C33;
     text-transform: uppercase;
-    border: 2px solid #455959;
+    border: 2px solid #092C33;
 }
 .button.contact:hover {
-    background-color: #455959;
+    background-color: #092C33;
+    opacity: 1;
     color: #f2f2f2;
+}
+.button.contact:active {
+    opacity: 0.5;
+    text-decoration: none;
 }
