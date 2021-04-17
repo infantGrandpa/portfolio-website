@@ -6,24 +6,22 @@ lightBlue: #455959;
 tan: #F2E1AA;
 offWhite: #f2f2f2;
 
-NEW
-navy: #011B30;
-blueGreen: #092C33;
-lightBlue: #455959;
-tan: #F2E1AA;
-offWhite: #f2f2f2;
-
-
 */
 
 * {
     box-sizing: border-box;
 }
 header {
-    background-color: #455959;
+    background-color: #022340;
     color: #f2f2f2;
-    padding: 10px;
-    border-bottom: 3px solid #072126;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    box-shadow: 0px 5px 7px 0px rgba(2, 35, 64, 0.53);
+    width: 100%;
+}
+main {
+  padding-top: 133px;
 }
 body {
     font-family: 'Montserrat', sans-serif;
@@ -34,12 +32,14 @@ body {
 }
 h1, h2, h3, h4 {
     line-height: 1.4;
+    text-align: center;
 }
 h1 {
     font-family: 'Roboto Slab', serif;
     font-size: 2.75em;
     font-weight: 900;
     color: #022340;
+    text-align: center;
 }
 h2 {
     font-family: 'Roboto Slab', serif;
@@ -64,6 +64,7 @@ img {
 }
 
 
+/* links */
 a {
   color: #092C33;
   text-decoration: none;
@@ -81,6 +82,34 @@ a:active {
   text-decoration: underline;
 }
 
+
+
+
+/* nav bar */
+nav {
+    display: inline-block;
+    width: 100%;
+}
+nav > ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav > ul > li{
+    display: inline-block;
+}
+nav > ul > li > a {
+  padding: 0 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #f2f2f2;
+}
+nav > ul > li > a:visited {
+  color: #f2f2f2;
+}
+
+
+
+/* content */
 .container {
     padding: 0 15px;
 }
@@ -90,13 +119,21 @@ a:active {
 
 #hero {
     text-align:center;
+    background-color: #455959;
+    padding: 20px 0;
+    display: inline-block;
+    width: 100%;
+    color: #f2f2f2;
 }
-
-#hero span {
-
+#hero h1 {
+    color: #f2f2f2;
 }
-
-
+#hero h2 {
+    color: #f2f2f2;
+}
+#hero p {
+    font-size: 1.25em;
+}
 
 
 #work .row {
@@ -104,7 +141,7 @@ a:active {
     border-bottom: 1px solid #455959;
 }
 
-
+/* buttons */
 .button {
     display: inline-block;
     background-color: #092C33;
@@ -130,7 +167,7 @@ a:active {
     text-decoration: none;
 }
 
-
+/* contact buttons */
 .button.contact {
     font-weight: 700;
     background-color: transparent;
@@ -146,4 +183,22 @@ a:active {
 .button.contact:active {
     opacity: 0.5;
     text-decoration: none;
+}
+
+footer {
+    text-align: center;
+}
+.social {
+    max-width: 64px;
+    padding: 4px;
+}
+#linkedin {
+    /* linkedin requires a larger size (1.16x larger than .social) due to the trademark symbol next to it */
+    max-width: 75px;
+
+}
+
+
+.logo {
+    max-width: 64px;
 }
