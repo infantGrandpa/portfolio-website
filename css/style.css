@@ -1,0 +1,64 @@
+/*
+
+navy: #011526;
+blueGreen: #072126;
+lightBlue: #455959;
+tan: #f2eddc;
+offWhite: #f2f2f2;
+
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f2f2f2;
+    font-size: 16px;
+    font-weight: 400;
+    color: #455959;
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.4;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.75em;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+h4 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+img {
+    width: 100%;
+}
+
+
+a {
+  color: #072126;
+  text-decoration: none;
+}
+a:hover {
+  color: #011526;
+  text-decoration: underline;
+}
+a:visited {
+  color: #455959;
+}
+a:active {
+  color: #072126;
+}
