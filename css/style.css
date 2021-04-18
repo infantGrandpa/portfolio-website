@@ -8,7 +8,7 @@ offWhite: #f2f2f2;
 
 */
 
-
+/* ~~ GENERAL STYLES */
 * {
     box-sizing: border-box;
 }
@@ -34,58 +34,47 @@ body {
 h1, h2, h3, h4 {
     line-height: 1.4;
     text-align: center;
+    color: #092C33;
 }
 h1 {
     font-family: 'Roboto Slab', serif;
     font-size: 2.75em;
     font-weight: 900;
-    color: #092C33;
 }
 h2 {
     font-family: 'Roboto Slab', serif;
     font-size: 2em;
     font-weight: 700;
-    color: #092C33;
 }
 h3 {
     font-family: 'Roboto Slab', serif;
     font-size: 1.5em;
     font-weight: 700;
-    color: #092C33;
 }
 h4 {
     font-family: 'Roboto Slab', serif;
     font-size: 1.25em;
     font-weight: 700;
-    color: #092C33;
 }
 img {
     width: 100%;
 }
-
-
-/* links */
 a {
   color: #092C33;
   text-decoration: none;
 }
+a:visited {
+  color: #092C33;
+}
 a:hover,
 a:focus {
-  color: #022340;
-  text-decoration: underline;
-}
-a:visited {
   color: #455959;
+  text-decoration: underline;
 }
 a:active {
-  color: #092C33;
+  color: #455959;
   text-decoration: underline;
 }
-
-
-
-
-/* nav bar */
 nav {
     display: inline-block;
     width: 100%;
@@ -108,8 +97,7 @@ nav > ul > li > a:visited {
 }
 
 
-
-/* content */
+/* ~~ GENERAL CLASSES */
 .container {
     padding: 0 15px;
 }
@@ -122,6 +110,7 @@ nav > ul > li > a:visited {
   display: table;
 }
 
+/* ~~ SECTIONS */
 #hero {
     text-align:center;
     background-color: #455959;
@@ -150,7 +139,7 @@ nav > ul > li > a:visited {
     border-bottom: 1px solid #455959;
 }
 
-/* buttons */
+/* ~~ BUTTONS */
 .button {
     display: inline-block;
     background-color: #092C33;
@@ -176,7 +165,6 @@ nav > ul > li > a:visited {
     text-decoration: none;
 }
 
-/* contact buttons */
 .button.contact {
     font-weight: 700;
     background-color: transparent;
@@ -197,14 +185,14 @@ nav > ul > li > a:visited {
 footer {
     text-align: center;
 }
+/* ~~ SOCIAL MEDIA LINKS */
 .social {
     max-width: 64px;
-    padding: 4px;
+    margin: 10px;
 }
 #linkedin {
     /* linkedin requires a larger size (1.16x larger than .social) due to the trademark symbol next to it */
     max-width: 75px;
-
 }
 [class*="col-"] {
     float: left;
