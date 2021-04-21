@@ -22,7 +22,7 @@ header {
     width: 100%;
 }
 main {
-  padding-top: 133px;
+  padding-top: 143px;
 }
 body {
     font-family: montserrat, sans-serif;
@@ -30,6 +30,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     color: #455959;
+    line-height: 1.5;
 }
 h1, h2, h3, h4 {
     line-height: 1.4;
@@ -41,9 +42,11 @@ h1, h2, h3, h4 {
 h1 {
     font-size: 2.75em;
     font-weight: 900;
+    line-height: 1;
 }
 h2 {
     font-size: 2em;
+    line-height: 1.2;
 }
 h3 {
     font-size: 1.5em;
@@ -53,6 +56,7 @@ h4 {
 }
 img {
     width: 100%;
+    margin: auto;
 }
 footer {
     text-align: center;
@@ -75,7 +79,7 @@ a:active {
 }
 /* ~~ NAV BAR */
 nav {
-    font-size: 1.35em;
+    font-size: 1.1em;
 }
 nav > ul{
     list-style-type: none;
@@ -86,7 +90,7 @@ nav > ul > li{
     width: auto;
 }
 nav > ul > li > a {
-  padding: 0 15px;
+  padding: 0 10px;
   text-transform: uppercase;
   font-weight: 700;
   color: #f2f2f2;
@@ -108,6 +112,9 @@ nav > ul > li > a:visited {
   content: "";
   clear: both;
   display: table;
+}
+.center {
+    text-align: center;
 }
 
 /* ~~ HOME PAGE SECTIONS */
@@ -149,6 +156,11 @@ nav > ul > li > a:visited {
 
 
 /* ~~ BUTTONS */
+.button-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .button {
     display: inline-block;
     background-color: #092C33;
@@ -159,6 +171,8 @@ nav > ul > li > a:visited {
     border-bottom: 2px solid #022340;
     transition: 0.2s opacity;
     text-decoration: none;
+    margin: auto;
+    width: auto;
 }
 .button:hover,
 .button:focus {
@@ -208,23 +222,31 @@ nav > ul > li > a:visited {
 .prototype {
     width: 100%;
 }
+#turfquest-clickthru {
+    display: none;
+}
 #turfquest-prototype {
+    display: none;
     max-width: 375px;
     height: 812px;
 }
 .back-to-top {
     text-align: center;
+    padding: 10px 0;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: #455959;
 }
 
 
 /* ~~ APP ICONS */
 .rounded-logo {
-    max-width: 64px;
-    margin: 10px;
+    max-width: 48px;
+    margin: 25px 0 0 10px;
 }
 #linkedin {
     /* linkedin requires a larger size (1.16x larger than .social) due to the trademark symbol next to it */
-    max-width: 75px;
+    max-width: 56px;
 }
 [class*="col-"] {
     float: left;
@@ -249,6 +271,10 @@ Medium devices (640px and larger)
         float: right;
         margin-top: 4px;
     }
+    nav > ul > li > a {
+        font-size: 1.35em;
+        padding: 15px;
+    }
     main {
       padding-top: 99px;
     }
@@ -272,6 +298,12 @@ Medium devices (640px and larger)
     .col-mid-10 {width: 83.33%;}
     .col-mid-11 {width: 91.66%;}
     .col-mid-12 {width: 100%;}
+    #turfquest-clickthru {
+        display: initial;
+    }
+    #turfquest-prototype {
+        display: initial;
+    }
 
 }
 /* ==============================
