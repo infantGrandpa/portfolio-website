@@ -94,11 +94,19 @@ nav > ul > li > a {
   text-transform: uppercase;
   font-weight: 700;
   color: #f2f2f2;
+  text-decoration:none;
+  transition: background-color 0.5s ease-in, color 0.2s ease-in;
 }
 nav > ul > li > a:visited {
   color: #f2f2f2;
+  text-decoration:none;
 }
-
+nav > ul > li > a:hover,
+nav > ul > li > a:focus,  {
+    background-color: #f2f2f2;
+    color: #022340;
+    text-decoration:none;
+}
 
 /* ~~ GENERAL CLASSES */
 .container {
@@ -174,13 +182,13 @@ nav > ul > li > a:visited {
     margin: auto;
     width: auto;
 }
+.button:visited {
+    color: #f2f2f2;
+    text-decoration: none;
+}
 .button:hover,
 .button:focus {
     opacity: 0.8;
-    text-decoration: none;
-}
-.button:visited {
-    color: #f2f2f2;
     text-decoration: none;
 }
 .button:active {
