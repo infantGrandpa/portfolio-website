@@ -95,6 +95,7 @@ nav > ul > li > a {
   font-weight: 700;
   color: #f2f2f2;
   text-decoration:none;
+  border-radius: 5px;
   transition: background-color 0.5s ease-in, color 0.2s ease-in;
 }
 nav > ul > li > a:visited {
@@ -102,7 +103,7 @@ nav > ul > li > a:visited {
   text-decoration:none;
 }
 nav > ul > li > a:hover,
-nav > ul > li > a:focus,  {
+nav > ul > li > a:focus  {
     background-color: #f2f2f2;
     color: #022340;
     text-decoration:none;
@@ -177,7 +178,7 @@ nav > ul > li > a:focus,  {
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid #022340;
-    transition: 0.2s opacity;
+    transition: opacity 0.5s;
     text-decoration: none;
     margin: auto;
     width: auto;
@@ -188,7 +189,8 @@ nav > ul > li > a:focus,  {
 }
 .button:hover,
 .button:focus {
-    opacity: 0.8;
+    color: #f2f2f2;
+    opacity: 0.7;
     text-decoration: none;
 }
 .button:active {
@@ -202,6 +204,7 @@ nav > ul > li > a:focus,  {
     color: #092C33;
     text-transform: uppercase;
     border: 2px solid #092C33;
+    transition: background-color 0.4s ease-out, color 0.4s ease-out;;
 }
 .button.contact:hover {
     background-color: #092C33;
@@ -266,6 +269,33 @@ nav > ul > li > a:focus,  {
 }
 
 
+.berlin-illustration {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+.sun {
+    animation: 4s color-change infinite alternate linear;
+}
+.cloud-front {
+    animation: 20s cloud-move infinite alternate linear;
+}
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
