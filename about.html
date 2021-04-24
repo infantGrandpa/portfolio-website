@@ -39,7 +39,7 @@
 
             <div class="section">
                 <div class="container">
-                    <picture>
+                    <picture id="my-picture">
                         <source srcset="img/my-picture.jpg" media="(max-width:767px)">
                         <img src="img/my-picture2.jpg" alt="Brett Abraham Image">
                     </picture>
@@ -59,13 +59,15 @@
                             <p>
                                 I also love video games and am always (at the very least) throwing around the idea of working on one.
                             </p>
-                            <a class="button" href="files/brett-abraham-cv.pdf" target="_blank">View my CV</a>
+                            <div class="button-parent">
+                                <a class="button" href="files/brett-abraham-cv.pdf" target="_blank">View my CV</a>
+                            </div>
                     </div>
 
                     <div class="row">
                         <h2>Skills & Tools</h2>
-                        <div class="row">
-                            <div class="column">
+                        <div class="row"  id="skills-tools">
+                            <div class="col-md-6">
                                 <h3>Relevant Skills</h3>
                                 <ul>
                                     <li>Frontend Development</li>
@@ -79,7 +81,7 @@
                                 </ul>
                             </div>
 
-                            <div class="column">
+                            <div class="col-md-6">
                                 <h3>Tools & Coding Languages</h3>
                                 <ul>
                                     <li>Adobe XD</li>
@@ -114,9 +116,9 @@
                 </div>
                 <div>   <!-- Social Media Links -->
                     <a href="https://www.linkedin.com/in/brett-abraham/" target="_blank"><img
-                        class="rounded-logo" id="linkedin" src="img/linkedin.png" alt="LinkedIn Logo"></a>
+                        class="social-logo" id="linkedin" src="img/linkedin.png" alt="LinkedIn Logo"></a>
                     <a href="https://twitter.com/infantgrandpa" target="_blank"><img
-                        class="rounded-logo" id="twitter" src="img/twitter.png" alt="Twitter Logo" ></a>
+                        class="social-logo" id="twitter" src="img/twitter.png" alt="Twitter Logo" ></a>
                 </div>
                 <p>
                     Copyright Brett Abraham 2021
