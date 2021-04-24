@@ -31,6 +31,7 @@ body {
     font-weight: 400;
     color: #455959;
     line-height: 1.5;
+
 }
 h1, h2, h3, h4 {
     line-height: 1.4;
@@ -57,6 +58,9 @@ h4 {
 img {
     width: 100%;
     margin: auto;
+}
+li {
+    padding: 15px 0;
 }
 footer {
     text-align: center;
@@ -96,7 +100,7 @@ nav > ul > li > a {
   color: #f2f2f2;
   text-decoration:none;
   border-radius: 5px;
-  transition: background-color 0.5s ease-in, color 0.2s ease-in;
+  transition: background-color 0.25s ease-in, color 0.25s ease-in;
 }
 nav > ul > li > a:visited {
   color: #f2f2f2;
@@ -112,7 +116,8 @@ nav > ul > li > a:focus  {
 /* ~~ GENERAL CLASSES */
 .container {
     padding: 0 15px;
-
+    display: flex;
+    flex-direction: column;
 }
 .row {
     margin: 25px 0;
@@ -178,7 +183,7 @@ nav > ul > li > a:focus  {
     padding: 10px;
     border-radius: 3px;
     border-bottom: 2px solid #022340;
-    transition: opacity 0.5s;
+    transition: opacity 0.25s;
     text-decoration: none;
     margin: auto;
     width: auto;
@@ -204,7 +209,7 @@ nav > ul > li > a:focus  {
     color: #092C33;
     text-transform: uppercase;
     border: 2px solid #092C33;
-    transition: background-color 0.4s ease-out, color 0.4s ease-out;;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;;
 }
 .button.contact:hover {
     background-color: #092C33;
@@ -252,6 +257,7 @@ nav > ul > li > a:focus  {
 
 /* ~~ APP ICONS */
 .rounded-logo {
+    display: inline-block;
     max-width: 48px;
     margin: 25px 0 0 10px;
 }
@@ -314,7 +320,7 @@ Medium devices (640px and larger)
         padding: 15px;
     }
     main {
-      padding-top: 99px;
+      padding-top: 146px;
     }
     body {
         font-size: 18px;
@@ -324,18 +330,18 @@ Medium devices (640px and larger)
         margin-left: auto;
         margin-right: auto;
     }
-    .col-mid-1 {width: 8.33%;}
-    .col-mid-2 {width: 16.66%;}
-    .col-mid-3 {width: 25%;}
-    .col-mid-4 {width: 33.33%;}
-    .col-mid-5 {width: 41.66%;}
-    .col-mid-6 {width: 50%;}
-    .col-mid-7 {width: 58.33%;}
-    .col-mid-8 {width: 66.66%;}
-    .col-mid-9 {width: 75%;}
-    .col-mid-10 {width: 83.33%;}
-    .col-mid-11 {width: 91.66%;}
-    .col-mid-12 {width: 100%;}
+    .col-md-1 {width: 8.33%;}
+    .col-md-2 {width: 16.66%;}
+    .col-md-3 {width: 25%;}
+    .col-md-4 {width: 33.33%;}
+    .col-md-5 {width: 41.66%;}
+    .col-md-6 {width: 50%;}
+    .col-md-7 {width: 58.33%;}
+    .col-md-8 {width: 66.66%;}
+    .col-md-9 {width: 75%;}
+    .col-md-10 {width: 83.33%;}
+    .col-md-11 {width: 91.66%;}
+    .col-md-12 {width: 100%;}
     #turfquest-clickthru {
         display: initial;
     }
