@@ -8,7 +8,7 @@ offWhite: #f2f2f2;
 
 */
 
-/* ~~ GENERAL STYLES */
+/*~~ GENERAL STYLES */
 * {
   box-sizing: border-box;
 }
@@ -22,7 +22,7 @@ header {
     width: 100%;
 }
 main {
-  padding-top: 184px;
+  padding-top: 117px;
 }
 body {
     font-family: montserrat, sans-serif;
@@ -31,7 +31,14 @@ body {
     font-weight: 400;
     color: #455959;
     line-height: 1.5;
-
+}
+p {
+    max-width: 600px;
+    margin: auto;
+}
+ul {
+    max-width: 500px;
+    margin: auto;
 }
 h1, h2, h3, h4 {
     line-height: 1.4;
@@ -42,12 +49,12 @@ h1, h2, h3, h4 {
     font-weight: 700;
 }
 h1 {
-    font-size: 2.75em;
+    font-size: 2.2em;
     font-weight: 900;
-    line-height: 1;
+    line-height: 1.2;
 }
 h2 {
-    font-size: 2em;
+    font-size: 1.6em;
     line-height: 1.2;
 }
 h3 {
@@ -58,10 +65,9 @@ h4 {
 }
 img {
     width: 100%;
-    margin: auto;
 }
 li {
-    padding: 15px 0;
+    padding: 5px 0;
 }
 footer {
     text-align: center;
@@ -82,18 +88,18 @@ a:active {
   color: #455959;
   text-decoration: underline;
 }
-/* ~~ NAV BAR */
+/*~~ NAV BAR */
 nav {
     font-size: 1.1em;
-    height: 75px;
 }
 nav > ul{
     list-style-type: none;
     padding: 0;
 }
-nav > ul > li{
+nav > ul > li {
     display: inline-block;
     width: auto;
+    padding: 0;
 }
 nav > ul > li > a {
   padding: 0 10px;
@@ -115,12 +121,17 @@ nav > ul > li > a:focus  {
     text-decoration:none;
 }
 
-/* ~~ GENERAL CLASSES */
+/*~~ GENERAL CLASSES */
+.section {
+    scroll-margin-top: 160px;
+}
 .container {
     padding: 0 15px;
 }
 .row {
     margin: 25px 0;
+    display: flex;
+    flex-direction: column;
 }
 .row::after {
   content: "";
@@ -130,6 +141,13 @@ nav > ul > li > a:focus  {
 .center {
     text-align: center;
 }
+[class*="col-"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px 0;
+}
+
 .table-of-contents {
     line-height: 1;
 }
@@ -145,15 +163,15 @@ nav > ul > li > a:focus  {
 }
 .table-of-contents > ol > li > a {
     padding: 0 5px;
+    text-decoration: underline;
     border-radius: 5px;
-    text-decoration: none;
     transition: background-color 0.25s ease-out, color 0.25s ease-out;
 }
 .table-of-contents > ol > li:hover,
 .table-of-contents > ol > li:focus {
     background-color: #F2E1AA;
 }
-/* ~~ HOME PAGE SECTIONS */
+/*~~ HOME PAGE SECTIONS */
 #hero {
     text-align:center;
     background-color: #455959;
@@ -172,7 +190,7 @@ nav > ul > li > a:focus  {
     color: #f2f2f2;
 }
 #hero p {
-    font-size: 1.25em;
+    font-size: 1.15em;
 }
 
 #about h3 { margin-top: 0;}
@@ -181,39 +199,61 @@ nav > ul > li > a:focus  {
     padding-bottom: 25px;
     border-bottom: 1px solid #455959;
 }
-#pipette-wireframe-parent {
-    max-height: 500px;
-}
-#pipette-wireframe {
-    display: block;
-    max-height: 500px;
-    width: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-/* ~~ ABOUT PAGE SECTIONS */
-#my-picture {
-    float: left;
-    max-width: 256px;
-    margin: 10px 20px;
+
+/*~~ ABOUT PAGE SECTIONS */
+#skills-tools > div > h3 {
+    text-align: left;
 }
 #skills-tools > div > ul > li{
     padding: 5px 0;
+    text-align: left;
 }
 
 
-/* ~~ PROJECT PAGE SECTIONS */
+/*~~ PROJECT PAGE SECTIONS */
+#turfquest > main > h1,
+#turfquest > main > h2,
+#turfquest > main > h3,
+#turfquest > main > h4 {
+    text-align: left;
+}
 #overview {
     padding: 20px 0;
     width: 100%;
 }
-#goal {
-
-    margin: auto;
+#goal > div {
+    text-align: center;
+    padding: 5px 0;
+    margin: 15px;
+    border-radius: 10px;
+    background-color: #F2E1AA;
+}
+#goal > div > h2 {
+    margin: 10px 0;
     text-align: center;
 }
-#goal > div > p > span {
-    font-size: 1.25em;
+#goal > div > p {
+    color: #092C33;
+    margin: 5px;
+
+}
+#comp-analysis {
+    max-width: 600px;
+    margin: auto;
+}
+#comp-analysis > div  {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#comp-analysis > div > h4 {
+    order: -2;
+}
+#comp-analysis > div > .logo-parent {
+    order: -1;
+    width: 25%;
+
 }
 
 .summary-list {
@@ -232,7 +272,7 @@ nav > ul > li > a:focus  {
     font-weight: 400;
 }
 
-/* ~~ BUTTONS */
+/*~~ BUTTONS */
 .button-parent {
     display: flex;
     justify-content: center;
@@ -284,9 +324,8 @@ nav > ul > li > a:focus  {
     text-decoration: none;
 }
 
-/* ~~ WIREFRAMES */
+/*~~ WIREFRAMES */
 .wireframe {
-    width: 100%;
     border-style: solid;
     border-width: medium;
     border-radius: 10px;
@@ -309,6 +348,7 @@ nav > ul > li > a:focus  {
     max-width: 375px;
     height: 812px;
 }
+
 .back-to-top {
     text-align: center;
     padding: 10px 0;
@@ -318,7 +358,7 @@ nav > ul > li > a:focus  {
 }
 
 
-/* ~~ APP ICONS */
+/*~~ APP ICONS */
 .logo-parent {
     display: inline-block;
     width:100%;
@@ -338,10 +378,7 @@ nav > ul > li > a:focus  {
     /* linkedin requires a larger size (1.16x larger than .social) due to the trademark symbol next to it */
     max-width: 56px;
 }
-[class*="col-"] {
-    float: left;
-    padding: 0 10px 0;
-}
+
 
 .logo {
     max-width: 64px;
@@ -379,6 +416,7 @@ nav > ul > li > a:focus  {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+    /*~~MID - ALL PAGES */
     header {
         text-align: unset;
         padding: 20px 0 13px;
@@ -390,28 +428,100 @@ Medium devices (640px and larger)
     nav > ul {
         margin: auto;
     }
-    nav > ul > li > a {
-        font-size: 1.35em;
+    nav > ul > li {
         padding: 15px;
     }
+    nav > ul > li > a {
+        font-size: 1.35em;
+        padding: 15px 0;
+    }
     main {
-      padding-top: 108px;
+      padding-top: 105px;
     }
     body {
         font-size: 18px;
+    }
+    .section {
+        scroll-margin-top: 120px;
     }
     .container {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
     }
-    .table-of-contents > ol {
-        list-style-type: none;
-        font-size: 1.1em;
-        padding: 0 40px;
+    .row {
+        flex-direction: row;
     }
 
 
+    /*~~MID - WORK */
+    #pipette-wireframe-parent {
+        max-height: 500px;
+    }
+    #pipette-wireframe {
+        display: block;
+        max-height: 500px;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*~~MID - ABOUT */
+    #my-picture {
+        float: left;
+        max-width: 256px;
+        margin: 10px 20px;
+    }
+    #skills-tools > div {
+        justify-content: flex-start;
+    }
+
+    /*~~MID - TURFQUEST */
+    .table-of-contents > h2 {
+        margin: 15px 0;
+        font-size: 1.8em;
+    }
+    .table-of-contents > ol {
+        list-style-type: none;
+        font-size: 1.05em;
+        margin: 0 auto;
+        max-width: 268px;
+        padding: 0;
+    }
+    #turfquest > main > h1, h2, h3, h4 {
+        text-align: center;
+    }
+    #goal {
+        width: 55%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #comp-analysis {
+        display: flex;
+        flex-direction: column;
+
+    }
+    #comp-analysis > div {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        margin: 15px 0;
+    }
+    #comp-analysis > div > h4 {
+        width: 25%;
+    }
+    #comp-analysis > div > .logo-parent {
+        order: 0;
+    }
+    /* To show the prototype */
+    #turfquest-clickthru {
+        display: initial;
+    }
+    #turfquest-prototype {
+        display: initial;
+    }
+
+    /*~~MID - COLUMNS */
     .col-md-1 {width: 8.33%;}
     .col-md-2 {width: 16.66%;}
     .col-md-3 {width: 25%;}
@@ -424,15 +534,7 @@ Medium devices (640px and larger)
     .col-md-10 {width: 83.33%;}
     .col-md-11 {width: 91.66%;}
     .col-md-12 {width: 100%;}
-    #turfquest-clickthru {
-        display: initial;
-    }
-    #turfquest-prototype {
-        display: initial;
-    }
-    #goal {
-        width: 75%;
-    }
+
 
 }
 /* ==============================
