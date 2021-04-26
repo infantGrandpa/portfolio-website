@@ -236,6 +236,9 @@ nav > ul > li > a:focus  {
     padding: 5px 0;
     text-align: left;
 }
+#my-story > .button-parent {
+    margin: 10px 0;
+}
 
 
 /*~~ PROJECT PAGE SECTIONS */
@@ -255,6 +258,7 @@ nav > ul > li > a:focus  {
     margin: 15px;
     border-radius: 10px;
     background-color: #F2E1AA;
+    max-width: 800px;
 }
 #goal > div > h2 {
     margin: 10px 0;
@@ -262,8 +266,7 @@ nav > ul > li > a:focus  {
 }
 #goal > div > p {
     color: #092C33;
-    margin: 5px;
-
+    padding: 5px;
 }
 #comp-analysis {
     max-width: 600px;
@@ -383,6 +386,7 @@ nav > ul > li > a:focus  {
     border-width: 1px 0px;
     border-style: solid;
     border-color: #455959;
+    margin-top: 10px;
 }
 
 
@@ -442,7 +446,7 @@ nav > ul > li > a:focus  {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 641px) {
+@media only screen and (min-width: 640px) {
     /*~~MID - ALL PAGES */
     header {
         text-align: unset;
@@ -461,7 +465,7 @@ Medium devices (640px and larger)
     }
     nav > ul > li > a {
         font-size: 1.35em;
-        padding: 15px 0;
+        padding: 10px 5px;
     }
     .nav-toggle li:not(:last-child) {
         display: inline-block;
@@ -507,10 +511,23 @@ Medium devices (640px and larger)
     #my-picture {
         float: left;
         max-width: 256px;
-        margin: 10px 20px;
+        margin: 15px 15px 0 0;
+        padding: 5px 5px 0 0;
     }
-    #skills-tools > div {
-        justify-content: flex-start;
+    #my-story {
+        max-width: 800px;
+        padding: 10px 45px;
+    }
+    #my-story > p {
+        max-width: inherit;
+        padding: 5px 0;
+    }
+
+    #skills-tools {
+        align-items: flex-start;
+    }
+    #skills-tools > div > h3 {
+        margin-top: 0;
     }
 
     /*~~MID - TURFQUEST */
@@ -532,6 +549,9 @@ Medium devices (640px and larger)
         width: 55%;
         margin-left: auto;
         margin-right: auto;
+    }
+    #goal > div {
+        margin: auto;
     }
     #comp-analysis {
         display: flex;
@@ -577,7 +597,7 @@ Medium devices (640px and larger)
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 1024px) {
     .col-lg-1 {width: 8.33%;}
     .col-lg-2 {width: 16.66%;}
     .col-lg-3 {width: 25%;}
@@ -594,5 +614,5 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1441px) {
+@media only screen and (min-width: 1440px) {
 }
