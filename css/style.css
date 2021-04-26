@@ -12,17 +12,19 @@ offWhite: #f2f2f2;
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 header {
     background-color: #022340;
     color: #f2f2f2;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 0 4px;
     position: fixed;
     box-shadow: 0px 5px 7px 0px rgba(2, 35, 64, 0.53);
     width: 100%;
 }
 main {
-  padding-top: 117px;
+  padding-top: 69px;
 }
 body {
     font-family: montserrat, sans-serif;
@@ -97,7 +99,6 @@ nav > ul{
     padding: 0;
 }
 nav > ul > li {
-    display: inline-block;
     width: auto;
     padding: 0;
 }
@@ -119,6 +120,33 @@ nav > ul > li > a:focus  {
     background-color: #f2f2f2;
     color: #022340;
     text-decoration:none;
+}
+.nav-toggle li:not(:last-child) {
+  display: none;
+  text-align: right;
+}
+.nav-toggle, .nav-toggle.responsive {
+  position: relative;
+}
+.nav-toggle.responsive nav {
+  padding: 24px 0 0;
+}
+.nav-toggle.responsive li {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #f2f2f2;
+}
+.nav-toggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+.nav-toggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding: 7px 0 0 10px;
+  background-color: transparent;
+  color: #f2f2f2;
 }
 
 /*~~ GENERAL CLASSES */
@@ -379,9 +407,8 @@ nav > ul > li > a:focus  {
     max-width: 56px;
 }
 
-
 .logo {
-    max-width: 64px;
+    max-width: 48px;
 }
 
 /* SVG ILLUSTRATION */
@@ -415,7 +442,7 @@ nav > ul > li > a:focus  {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
     /*~~MID - ALL PAGES */
     header {
         text-align: unset;
@@ -430,11 +457,19 @@ Medium devices (640px and larger)
     }
     nav > ul > li {
         padding: 15px;
+        display: inline-block;
     }
     nav > ul > li > a {
         font-size: 1.35em;
         padding: 15px 0;
     }
+    .nav-toggle li:not(:last-child) {
+        display: inline-block;
+    }
+    .nav-toggle li:last-child {
+        display: none;
+    }
+
     main {
       padding-top: 105px;
     }
@@ -452,7 +487,9 @@ Medium devices (640px and larger)
     .row {
         flex-direction: row;
     }
-
+    .logo {
+        max-width: 64px;
+    }
 
     /*~~MID - WORK */
     #pipette-wireframe-parent {
@@ -540,7 +577,7 @@ Medium devices (640px and larger)
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1025px) {
     .col-lg-1 {width: 8.33%;}
     .col-lg-2 {width: 16.66%;}
     .col-lg-3 {width: 25%;}
@@ -557,5 +594,5 @@ Large devices (1024px or larger)
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1441px) {
 }
