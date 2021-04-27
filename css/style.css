@@ -45,8 +45,8 @@ ul {
 h1, h2, h3, h4 {
     line-height: 1.4;
     text-align: center;
-        font-family: roboto-slab, sans-serif;
-        font-size: 1.25em;
+    font-family: roboto-slab, sans-serif;
+    font-size: 1.25em;
     color: #092C33;
     font-weight: 700;
 }
