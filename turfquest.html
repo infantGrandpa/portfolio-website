@@ -1,506 +1,507 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Brett Abraham - Designer & Developer</title>
-        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" href="https://use.typekit.net/xrj5jfn.css">      <!-- Fonts -->
-        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
-        <link rel="manifest" href="img/favicons/site.webmanifest">
-        <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-        <meta name="msapplication-TileColor" content="#da532c">
-        <meta name="theme-color" content="#ffffff">
-        <script src="https://kit.fontawesome.com/4a90f28fd7.js" crossorigin="anonymous"></script>
-    </head>
-    <body id="home">
-        <header>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Brett Abraham - Designer & Developer</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/xrj5jfn.css"> <!-- Fonts -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <script src="https://kit.fontawesome.com/4a90f28fd7.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="home">
+    <header>
+        <div class="container">
+            <div class="nav-toggle" id="my-nav-toggle">
+                <a href="index.html"><img src="img/my-logo.png" class="logo" alt="Brett Abraham's Logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact" onclick="menuToggle();">Contact</a></li>
+                        <li>
+                            <a href="javascript:void(0);" class="icon" onclick="menuToggle();">
+                                <i class="fas fa-bars"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="section" id="overview">
+            <h1>TurfQuest</h1>
             <div class="container">
-                <div class="nav-toggle" id="my-nav-toggle">
-                    <a href="index.html"><img src="img/my-logo.png" class="logo" alt="Brett Abraham's Logo"></a>
-                    <nav>
+                <div class="row">
+                    <div class="col-md-5">
                         <ul>
-                            <li><a href="index.html">Work</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="#contact" onclick="menuToggle();">Contact</a></li>
-                            <li>
-                                <a href="javascript:void(0);" class="icon" onclick="menuToggle();">
-                                    <i class="fas fa-bars"></i>
-                                </a>
-                            </li>
+                            <li><strong>Role:</strong> Sole UX/UI Designer</li>
+                            <li><strong>Timeframe:</strong> 8 Months (June 2020 - February 2021)</li>
+                            <li><strong>Tools:</strong> Adobe XD, Photoshop, Balsamiq</li>
                         </ul>
-                    </nav>
+                    </div>
+                    <div class="col-md-7">
+                        <picture>
+                            <source srcset="img/turfquest/turfquest-city-mobile.jpg" media="(max-width:767px)">
+                            <img src="img/turfquest/turfquest-city-desktop.jpg" alt="TurfQuest Image">
+                        </picture>
+                    </div>
                 </div>
             </div>
-        </header>
+        </div>
+
+        <div class="section" id="table-of-contents">
+            <div class="container table-of-contents">
+                <h2>Table of Contents</h2>
+                <ol>
+                    <li><a href="#goal">The Goal</a></li>
+                    <li><a href="#research">Research & Early Designs</a></li>
+                    <li><a href="#initial-designs">Initial Designs</a></li>
+                    <li><a href="#testing">User Testing & Revisions</a></li>
+                    <li><a href="#finalizing">Finalizing the Design</a></li>
+
+                </ol>
+            </div>
+        </div>
 
 
-        <main>
-            <div class="section" id="overview">
-                <h1>TurfQuest</h1>
-                <div class="container">
+        <div class="section" id="goal">
+            <div class="container">
+                <h2>The Goal</h2>
+                <p>
+                    Devise a scavenger hunt style game for groups to explore their community while engaging in fun activities with friends.
+                </p>
+            </div>
+        </div>
+
+        <div class="section" id="research">
+            <div class="container">
+                <h2>Research & Early Designs</h2>
+                <h3>Competitive Analysis</h3>
+                <div id="comp-analysis">
                     <div class="row">
-                        <div class="col-md-5">
+                        <h4>Actionbound</h4>
+                        <div class="col-md-8">
                             <ul>
-                                <li><strong>Role:</strong> Sole UX/UI Designer</li>
-                                <li><strong>Timeframe:</strong> 8 Months (June 2020 - February 2021)</li>
-                                <li><strong>Tools:</strong> Adobe XD, Photoshop, Balsamiq</li>
+                                <li>Users share custom scavenger hunts with the community</li>
+                                <li>Small community limits full potential</li>
                             </ul>
                         </div>
-                        <div class="col-md-7">
-                            <picture>
-                                <source srcset="img/turfquest/turfquest-city-mobile.jpg" media="(max-width:767px)">
-                                <img src="img/turfquest/turfquest-city-desktop.jpg" alt="TurfQuest Image">
+                        <div class="logo-parent col-md-4">
+                            <picture class="rounded-logo">
+                                <source srcset="img/turfquest/logo-actionbound-sm.png" media="(max-width:767px)">
+                                <img src="img/turfquest/logo-actionbound-lg.png" alt="Actionbound Logo">
                             </picture>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <div class="section" id="table-of-contents">
-                <div class="container table-of-contents">
-                    <h2>Table of Contents</h2>
-                    <ol>
-                        <li><a href="#goal">The Goal</a></li>
-                        <li><a href="#research">Research & Early Designs</a></li>
-                        <li><a href="#initial-designs">Initial Designs</a></li>
-                        <li><a href="#testing">User Testing & Revisions</a></li>
-                        <li><a href="#finalizing">Finalizing the Design</a></li>
-
-                    </ol>
-                </div>
-            </div>
-
-
-            <div class="section" id="goal">
-                <div class="container">
-                    <h2>The Goal</h2>
-                    <p>
-                        Devise a scavenger hunt style game for groups to explore their community while engaging in fun activities with friends.
-                    </p>
-                </div>
-            </div>
-
-            <div class="section" id="research">
-                <div class="container">
-                    <h2>Research & Early Designs</h2>
-                    <h3>Competitive Analysis</h3>
-                    <div id="comp-analysis">
-                        <div class="row">
-                            <h4>Actionbound</h4>
-                            <div class="col-md-8">
-                                <ul>
-                                    <li>Users share custom scavenger hunts with the community</li>
-                                    <li>Small community limits full potential</li>
-                                </ul>
-                            </div>
-                            <div class="logo-parent col-md-4">
-                                <picture class="rounded-logo">
-                                    <source srcset="img/turfquest/logo-actionbound-sm.png" media="(max-width:767px)">
-                                    <img src="img/turfquest/logo-actionbound-lg.png" alt="Actionbound Logo">
-                                </picture>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <h4>Let's Roam</h4>
-                            <div class="col-md-8">
-                                <ul>
-                                    <li>Professionally crafted scavenger hunts ensure quality</li>
-                                    <li>Heavy up-front fee increases barrier to entry</li>
-                                </ul>
-                            </div>
-                            <div class="logo-parent col-md-4">
-                                <picture class="rounded-logo">
-                                    <source srcset="img/turfquest/logo-lets-roam-sm.png" media="(max-width:767px)">
-                                    <img src="img/turfquest/logo-lets-roam-lg.png" alt="Let's Roam Logo">
-                                </picture>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <h4>Pokémon Go</h4>
-                            <div class="col-md-8">
-                                <ul>
-                                    <li>Procedurally generated content provides endless hunts</li>
-                                    <li>Little to connect different stops to each other</li>
-                                </ul>
-                            </div>
-                            <div class="logo-parent col-md-4">
-                                <picture  class="rounded-logo">
-                                    <source srcset="img/turfquest/logo-pokemon-go-sm.png" media="(max-width:767px)">
-                                    <img class="rounded-logo" src="img/turfquest/logo-pokemon-go-lg.png" alt="Pokémon Go Logo">
-                                </picture>
-                            </div>
-                        </div>
-                    </div>
-
-                    <p>
-                        From this analysis, I determined we would need a mix of procedurally generated hunts to create a wealth of content
-                        but allow users to craft and share their own for better quality experiences.
-                    </p>
-
-                    <h3>User Research</h3>
-                    <p>
-                        My next course of action was to interview users.
-                        I interviewed three people within the age range of 18-35.
-                        Once again, I walked away with several key takeaways:
-                    </p>
-                    <ul>
-                        <li>Scavenger hunts are not a regular activity in people's lives.</li>
-                        <li>Competition can be a key draw for people to participate.</li>
-                        <li>When spending time with friends regularly, they usually do so for at least 2 hours.</li>
-                        <li>The act of planning an activity (scavenger hunt or otherwise) tends to cause the most frustration in users.</li>
-                    </ul>
-
-
-                    <h3>User Personas</h3>
                     <div class="row">
-                        <div class="col-lg-6">
-                            <picture>
-                                <source srcset="img/turfquest/user-personas-jess-sm.png" media="(max-width:767px)">
-                                <img src="img/turfquest/user-personas-jess-lg.png" alt="User Persona (Jess)">
-                            </picture>
-                        </div>
-                        <div class="col-lg-6">
-                            <picture>
-                                <source srcset="img/turfquest/user-personas-martin-sm.png" media="(max-width:767px)">
-                                <img src="img/turfquest/user-personas-martin-lg.png" alt="User Persona (Martin)">
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section" id="initial-designs">
-                <div class="container">
-                    <h2>Initial Designs</h2>
-                    <div class="row">
-                        <div class="col-md-7">
-                            <p>
-                                My early designs focused on merging quality content with a wealth of content,
-                                which would require both procedurally generated hunts (similar to Pokémon Go) and user-created hunts (similar to Actionbound).
-                                User created hunts would require purchasing to help encourage quality in the creations.
-                            </p>
-                            <p>
-                                To alleviate user frustration while planning the hunts,
-                                I designed a scheduling poll that would allow each invitee to select which days and times worked best for them,
-                                with minimal back and forth necessary.
-                            </p>
-                        </div>
-                        <div class="col-md-5 summary-list">
+                        <h4>Let's Roam</h4>
+                        <div class="col-md-8">
                             <ul>
-                                <li>Procedurally generated hunts</li>
-                                <li>Paid custom hunts</li>
-                                <li>Partnership with local businesses</li>
-                                <li>Hunt scheduling</li>
+                                <li>Professionally crafted scavenger hunts ensure quality</li>
+                                <li>Heavy up-front fee increases barrier to entry</li>
                             </ul>
                         </div>
+                        <div class="logo-parent col-md-4">
+                            <picture class="rounded-logo">
+                                <source srcset="img/turfquest/logo-lets-roam-sm.png" media="(max-width:767px)">
+                                <img src="img/turfquest/logo-lets-roam-lg.png" alt="Let's Roam Logo">
+                            </picture>
+                        </div>
                     </div>
 
-                    <!-- Mid-Fidelity Wireframes -->
                     <div class="row">
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/mid-wireframes/home-screen-sm.png" media="(max-width:767px)">
-                                <img class="wireframe" src="img/turfquest/mid-wireframes/home-screen-lg.png" alt="Home Screen">
-                            </picture>
-                            <p class="caption">Home Screen</p>
+                        <h4>Pokémon Go</h4>
+                        <div class="col-md-8">
+                            <ul>
+                                <li>Procedurally generated content provides endless hunts</li>
+                                <li>Little to connect different stops to each other</li>
+                            </ul>
                         </div>
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/mid-wireframes/hunt-browser-sm.png" media="(max-width:767px)">
-                                <img class="wireframe" src="img/turfquest/mid-wireframes/hunt-browser-lg.png" alt="Hunt Browser">
+                        <div class="logo-parent col-md-4">
+                            <picture class="rounded-logo">
+                                <source srcset="img/turfquest/logo-pokemon-go-sm.png" media="(max-width:767px)">
+                                <img class="rounded-logo" src="img/turfquest/logo-pokemon-go-lg.png" alt="Pokémon Go Logo">
                             </picture>
-                            <p class="caption">Hunt Browser</p>
-                        </div>
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/mid-wireframes/hunt-details-sm.png" media="(max-width:767px)">
-                                <img class="wireframe" src="img/turfquest/mid-wireframes/hunt-details-lg.png" alt="Hunt Details">
-                            </picture>
-                            <p class="caption">Hunt Details</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/mid-wireframes/hunt-map-sm.png" media="(max-width:767px)">
-                                <img class="wireframe" src="img/turfquest/mid-wireframes/hunt-map-lg.png" alt="Hunt Locations">
-                            </picture>
-                            <p class="caption">Hunt Locations</p>
-                        </div>
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/mid-wireframes/create-sm.png" media="(max-width:767px)">
-                                <img class="wireframe" src="img/turfquest/mid-wireframes/create-lg.png" alt="Create Custom Hunt">
-                            </picture>
-                            <p class="caption">Create Custom Hunt</p>
-                        </div>
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/mid-wireframes/poll-dates-sm.png" media="(max-width:767px)">
-                                <img class="wireframe" src="img/turfquest/mid-wireframes/poll-dates-lg.png" alt="Scheduling Poll">
-                            </picture>
-                            <p class="caption">Scheduling Poll</p>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="section" id="testing">
-                <div class="container">
-                    <h2>User Testing & Revisions</h2>
+                <p>
+                    From this analysis, I determined we would need a mix of procedurally generated hunts to create a wealth of content
+                    but allow users to craft and share their own for better quality experiences.
+                </p>
 
-                    <h3>Naming the App</h3>
-                    <p>Before beginning testing, I wanted to have a name to call the app. I decided upon TurfQuest to give it a sense of adventure</p>
-                    <p>With this name, I renamed all scavenger hunts to "Quests" and was ready for testing!</p>
+                <h3>User Research</h3>
+                <p>
+                    My next course of action was to interview users.
+                    I interviewed three people within the age range of 18-35.
+                    Once again, I walked away with several key takeaways:
+                </p>
+                <ul>
+                    <li>Scavenger hunts are not a regular activity in people's lives.</li>
+                    <li>Competition can be a key draw for people to participate.</li>
+                    <li>When spending time with friends regularly, they usually do so for at least 2 hours.</li>
+                    <li>The act of planning an activity (scavenger hunt or otherwise) tends to cause the most frustration in users.</li>
+                </ul>
 
-                    <h3>Usability Testing</h3>
-                    <div class="row">
-                        <div class="col-md-5">
-                            <p>
-                                Armed with an early prototype, I conducted moderated remote usability testing with 6 participants to understand the strengths and weaknesses of the project so far.
-                            </p>
-                        </div>
-                        <div class="col-md-7">
-                            <picture>
-                                <source srcset="img/turfquest/testing-results-sm.png" media="(max-width:767px)">
-                                <img src="img/turfquest/testing-results-lg.png" alt="Major Usability Test Results">
-                            </picture>
-                        </div>
+
+                <h3>User Personas</h3>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <picture>
+                            <source srcset="img/turfquest/user-personas-jess-sm.png" media="(max-width:767px)">
+                            <img src="img/turfquest/user-personas-jess-lg.png" alt="User Persona (Jess)">
+                        </picture>
                     </div>
-
-                    <p>The testing resulted in a few key takeaways:</p>
-                    <ul>
-                        <li>Scheduling polls was the main source of tension and confusion for my users.</li>
-                        <li>There were too few signifiers that custom quests required payment prior to the payment page.</li>
-                        <li>People were apprehensive to pay for custom quests.</li>
-                        <li>When explaining what a scheduling poll was for, few participants saw the value in the feature.</li>
-                    </ul>
-
-
-                    <h3>Revising the Design</h3>
-                    <p>
-                        With these test findings, I went back to my sitemap to determine what needed to be changed.
-                        Scheduling polls clearly needed a revamp and I needed to rethink custom quests a bit.
-                    </p>
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <picture>
-                                <source srcset="img/turfquest/sitemap-original-sm.png" media="(max-width:767px)">
-                                <img src="img/turfquest/sitemap-original-lg.png" alt="Original Sitemap">
-                            </picture>
-                        </div>
-                        <div class="col-lg-6">
-                            <picture>
-                                <source srcset="img/turfquest/sitemap-revised-sm.png" media="(max-width:767px)">
-                                <img src="img/turfquest/sitemap-revised-lg.png" alt="Revised Sitemap">
-                            </picture>
-                        </div>
-                    </div>
-                    <p>
-                        I decided that changing scheduling polls would be too much work for too little gain, so I removed the feature entirely.
-                    </p>
-                    <p>
-                        Custom Quests were given higher priority which would allow better communication on pricing to users ahead of time.
-                    </p>
-                    <p>
-                        To reduce the Custom Quest's barrier to entry,
-                        I added In-App Currency (temporarily called "TurfCoins").
-                        TurfCoins could be used to purchase in-app rewards or Custom Quests.
-                        This would help remove the barrier to entry on creating custom quests while still allowing them to be a premium experience.
-                    </p>
-
-                    <!-- Adding Side Quests -->
-                    <h4>Side Quests</h4>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <p>
-                                Lastly, I added "Side Quests,"
-                                which are weekly challenges players could participate in to earn in-app currency.
-                            </p>
-                            <p>
-                                Side Quests would be generic enough that anyone would be able to complete them regardless of location,
-                                they would be able to be completed during users' regular weekly routines with some detours and would
-                                also be very easy to complete while participating in a Quest.
-                            </p>
-                        </div>
-                        <div class="col-md-6 summary-list">
-                            <ol>
-                                <li>
-                                    Walk X # of Steps
-                                    <ul>
-                                        <li>
-                                            This is an always active, tiered goal.
-                                            As players reach a milestone,
-                                            they get a reward and a new goal
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>Vist a park 2 times</li>
-                                <li>Meet up with another player</li>
-                                <li>Visit a Restaurant</li>
-                            </ol>
-                        </div>
-                    </div>
-
-                    <!-- Revised Wireframes -->
-                    <div class="row">
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/revised-wireframes/home-screen-sm.png" media="(max-width:767px)">
-                                <img class="wireframe" src="img/turfquest/revised-wireframes/home-screen-lg.png" alt="Home Screen">
-                            </picture>
-                            <p class="caption">Home Screen</p>
-                        </div>
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/revised-wireframes/quest-browser-sm.png" media="(max-width:767px)">
-                                <img class="wireframe" src="img/turfquest/revised-wireframes/quest-browser-lg.png" alt="Quest Browser">
-                            </picture>
-                            <p class="caption">Quest Browser</p>
-                        </div>
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/revised-wireframes/quest-details-sm.png" media="(max-width:767px)">
-                                <img class="wireframe" src="img/turfquest/revised-wireframes/quest-details-lg.png" alt="Quest Details">
-                            </picture>
-                            <p class="caption">Quest Details</p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/revised-wireframes/quest-map-sm.png" media="(max-width:767px)">
-                                <img class="wireframe"src="img/turfquest/revised-wireframes/quest-map-lg.png" alt="Quest Locations">
-                            </picture>
-                            <p class="caption">Quest Locations</p>
-                        </div>
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/revised-wireframes/create-sm.png" media="(max-width:767px)">
-                                <img class="wireframe" src="img/turfquest/revised-wireframes/create-lg.png" alt="Create Custom Quest">
-                            </picture>
-                            <p class="caption">Create Custom Quest</p>
-                        </div>
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/revised-wireframes/side-quests-sm.png" media="(max-width:767px)">
-                                <img class="wireframe" src="img/turfquest/revised-wireframes/side-quests-lg.png" alt="Side Quests">
-                            </picture>
-                            <p class="caption">Scheduling Poll</p>
-                        </div>
+                    <div class="col-lg-6">
+                        <picture>
+                            <source srcset="img/turfquest/user-personas-martin-sm.png" media="(max-width:767px)">
+                            <img src="img/turfquest/user-personas-martin-lg.png" alt="User Persona (Martin)">
+                        </picture>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <div class="section" id="finalizing">
-                <div class="container">
-                    <h2>Finalizing the Design</h2>
-                    <p>
-                        After these redesigns, I was prepared to get the design to a more finalized state.
-                        I created a design system and worked with fellow designers to improve the design.
-                    </p>
-                    <p>Below, you'll find the design's current state.</p>
-
-                    <!-- High-Fidelity Wireframes -->
-                    <div class="row">
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/high-wireframes/home-screen-sm.png" media="(max-width:767px)">
-                                <img class="wireframe" src="img/turfquest/high-wireframes/home-screen-lg.png" alt="Home Screen">
-                            </picture>
-                            <p class="caption">Home Screen</p>
-                        </div>
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/high-wireframes/quest-browser-sm.png" media="(max-width:767px)">
-                                <img class="wireframe" src="img/turfquest/high-wireframes/quest-browser-lg.png" alt="Quest Browser">
-                            </picture>
-                            <p class="caption">Quest Browser</p>
-                        </div>
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/high-wireframes/quest-details-sm.png" media="(max-width:767px)">
-                                <img class="wireframe" src="img/turfquest/high-wireframes/quest-details-lg.png" alt="Quest Details">
-                            </picture>
-                            <p class="caption">Quest Details</p>
-                        </div>
+        <div class="section" id="initial-designs">
+            <div class="container">
+                <h2>Initial Designs</h2>
+                <div class="row">
+                    <div class="col-md-7">
+                        <p>
+                            My early designs focused on merging quality content with a wealth of content,
+                            which would require both procedurally generated hunts (similar to Pokémon Go) and user-created hunts (similar to Actionbound).
+                            User created hunts would require purchasing to help encourage quality in the creations.
+                        </p>
+                        <p>
+                            To alleviate user frustration while planning the hunts,
+                            I designed a scheduling poll that would allow each invitee to select which days and times worked best for them,
+                            with minimal back and forth necessary.
+                        </p>
                     </div>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/high-wireframes/quest-map-sm.png" media="(max-width:767px)">
-                                <img class="wireframe" src="img/turfquest/high-wireframes/quest-map-lg.png" alt="Quest Locations">
-                            </picture>
-                            <p class="caption">Quest Locations</p>
-                        </div>
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/high-wireframes/create-sm.png" media="(max-width:767px)">
-                                <img class="wireframe" src="img/turfquest/high-wireframes/create-lg.png" alt="Create Custom Quest">
-                            </picture>
-                            <p class="caption">Create Custom Quest</p>
-                        </div>
-                        <div class="col-md-4">
-                            <picture>
-                                <source srcset="img/turfquest/high-wireframes/side-quests-sm.png" media="(max-width:767px)">
-                                <img class="wireframe" src="img/turfquest/high-wireframes/side-quests-lg.png" alt="Side Quests">
-                            </picture>
-                            <p class="caption">Scheduling Poll</p>
-                        </div>
+                    <div class="col-md-5 summary-list">
+                        <ul>
+                            <li>Procedurally generated hunts</li>
+                            <li>Paid custom hunts</li>
+                            <li>Partnership with local businesses</li>
+                            <li>Hunt scheduling</li>
+                        </ul>
                     </div>
+                </div>
 
-                    <h3>The Latest Prototype</h3>
-                    <div class="center">
-                        <p>Try out the prototype yourself!</p>
-                        <!-- Prototype -->
-                        <iframe class="prototype" id="turfquest-prototype" src="https://xd.adobe.com/embed/d9ee888d-8cdd-415b-98ec-fa4b3c894c74-8cbd/" frameborder="0" allowfullscreen></iframe>
-                        <p><span id="turfquest-clickthru">Click through above or</span></p>
-                        <div class="button-parent">
-                            <a class="button" href="https://xd.adobe.com/view/d9ee888d-8cdd-415b-98ec-fa4b3c894c74-8cbd/">Check it out here!</a>
-                        </div>
-
-                        <p class="back-to-top"><a href="#table-of-contents">Back to Top</a></p>
+                <!-- Mid-Fidelity Wireframes -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/mid-wireframes/home-screen-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/mid-wireframes/home-screen-lg.png" alt="Home Screen">
+                        </picture>
+                        <p class="caption">Home Screen</p>
+                    </div>
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/mid-wireframes/hunt-browser-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/mid-wireframes/hunt-browser-lg.png" alt="Hunt Browser">
+                        </picture>
+                        <p class="caption">Hunt Browser</p>
+                    </div>
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/mid-wireframes/hunt-details-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/mid-wireframes/hunt-details-lg.png" alt="Hunt Details">
+                        </picture>
+                        <p class="caption">Hunt Details</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/mid-wireframes/hunt-map-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/mid-wireframes/hunt-map-lg.png" alt="Hunt Locations">
+                        </picture>
+                        <p class="caption">Hunt Locations</p>
+                    </div>
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/mid-wireframes/create-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/mid-wireframes/create-lg.png" alt="Create Custom Hunt">
+                        </picture>
+                        <p class="caption">Create Custom Hunt</p>
+                    </div>
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/mid-wireframes/poll-dates-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/mid-wireframes/poll-dates-lg.png" alt="Scheduling Poll">
+                        </picture>
+                        <p class="caption">Scheduling Poll</p>
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
+
+        <div class="section" id="testing">
+            <div class="container">
+                <h2>User Testing & Revisions</h2>
+
+                <h3>Naming the App</h3>
+                <p>Before beginning testing, I wanted to have a name to call the app. I decided upon TurfQuest to give it a sense of adventure</p>
+                <p>With this name, I renamed all scavenger hunts to "Quests" and was ready for testing!</p>
+
+                <h3>Usability Testing</h3>
+                <div class="row">
+                    <div class="col-md-5">
+                        <p>
+                            Armed with an early prototype, I conducted moderated remote usability testing with 6 participants to understand the strengths and weaknesses of the project so far.
+                        </p>
+                    </div>
+                    <div class="col-md-7">
+                        <picture>
+                            <source srcset="img/turfquest/testing-results-sm.png" media="(max-width:767px)">
+                            <img src="img/turfquest/testing-results-lg.png" alt="Major Usability Test Results">
+                        </picture>
+                    </div>
+                </div>
+
+                <p>The testing resulted in a few key takeaways:</p>
+                <ul>
+                    <li>Scheduling polls was the main source of tension and confusion for my users.</li>
+                    <li>There were too few signifiers that custom quests required payment prior to the payment page.</li>
+                    <li>People were apprehensive to pay for custom quests.</li>
+                    <li>When explaining what a scheduling poll was for, few participants saw the value in the feature.</li>
+                </ul>
 
 
-        <footer id="contact">
+                <h3>Revising the Design</h3>
+                <p>
+                    With these test findings, I went back to my sitemap to determine what needed to be changed.
+                    Scheduling polls clearly needed a revamp and I needed to rethink custom quests a bit.
+                </p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <picture>
+                            <source srcset="img/turfquest/sitemap-original-sm.png" media="(max-width:767px)">
+                            <img src="img/turfquest/sitemap-original-lg.png" alt="Original Sitemap">
+                        </picture>
+                    </div>
+                    <div class="col-lg-6">
+                        <picture>
+                            <source srcset="img/turfquest/sitemap-revised-sm.png" media="(max-width:767px)">
+                            <img src="img/turfquest/sitemap-revised-lg.png" alt="Revised Sitemap">
+                        </picture>
+                    </div>
+                </div>
+                <p>
+                    I decided that changing scheduling polls would be too much work for too little gain, so I removed the feature entirely.
+                </p>
+                <p>
+                    Custom Quests were given higher priority which would allow better communication on pricing to users ahead of time.
+                </p>
+                <p>
+                    To reduce the Custom Quest's barrier to entry,
+                    I added In-App Currency (temporarily called "TurfCoins").
+                    TurfCoins could be used to purchase in-app rewards or Custom Quests.
+                    This would help remove the barrier to entry on creating custom quests while still allowing them to be a premium experience.
+                </p>
+
+                <!-- Adding Side Quests -->
+                <h4>Side Quests</h4>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            Lastly, I added "Side Quests,"
+                            which are weekly challenges players could participate in to earn in-app currency.
+                        </p>
+                        <p>
+                            Side Quests would be generic enough that anyone would be able to complete them regardless of location,
+                            they would be able to be completed during users' regular weekly routines with some detours and would
+                            also be very easy to complete while participating in a Quest.
+                        </p>
+                    </div>
+                    <div class="col-md-6 summary-list">
+                        <ol>
+                            <li>
+                                Walk X # of Steps
+                                <ul>
+                                    <li>
+                                        This is an always active, tiered goal.
+                                        As players reach a milestone,
+                                        they get a reward and a new goal
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>Vist a park 2 times</li>
+                            <li>Meet up with another player</li>
+                            <li>Visit a Restaurant</li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Revised Wireframes -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/revised-wireframes/home-screen-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/revised-wireframes/home-screen-lg.png" alt="Home Screen">
+                        </picture>
+                        <p class="caption">Home Screen</p>
+                    </div>
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/revised-wireframes/quest-browser-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/revised-wireframes/quest-browser-lg.png" alt="Quest Browser">
+                        </picture>
+                        <p class="caption">Quest Browser</p>
+                    </div>
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/revised-wireframes/quest-details-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/revised-wireframes/quest-details-lg.png" alt="Quest Details">
+                        </picture>
+                        <p class="caption">Quest Details</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/revised-wireframes/quest-map-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/revised-wireframes/quest-map-lg.png" alt="Quest Locations">
+                        </picture>
+                        <p class="caption">Quest Locations</p>
+                    </div>
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/revised-wireframes/create-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/revised-wireframes/create-lg.png" alt="Create Custom Quest">
+                        </picture>
+                        <p class="caption">Create Custom Quest</p>
+                    </div>
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/revised-wireframes/side-quests-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/revised-wireframes/side-quests-lg.png" alt="Side Quests">
+                        </picture>
+                        <p class="caption">Scheduling Poll</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="finalizing">
+            <div class="container">
+                <h2>Finalizing the Design</h2>
+                <p>
+                    After these redesigns, I was prepared to get the design to a more finalized state.
+                    I created a design system and worked with fellow designers to improve the design.
+                </p>
+                <p>Below, you'll find the design's current state.</p>
+
+                <!-- High-Fidelity Wireframes -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/high-wireframes/home-screen-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/high-wireframes/home-screen-lg.png" alt="Home Screen">
+                        </picture>
+                        <p class="caption">Home Screen</p>
+                    </div>
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/high-wireframes/quest-browser-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/high-wireframes/quest-browser-lg.png" alt="Quest Browser">
+                        </picture>
+                        <p class="caption">Quest Browser</p>
+                    </div>
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/high-wireframes/quest-details-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/high-wireframes/quest-details-lg.png" alt="Quest Details">
+                        </picture>
+                        <p class="caption">Quest Details</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/high-wireframes/quest-map-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/high-wireframes/quest-map-lg.png" alt="Quest Locations">
+                        </picture>
+                        <p class="caption">Quest Locations</p>
+                    </div>
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/high-wireframes/create-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/high-wireframes/create-lg.png" alt="Create Custom Quest">
+                        </picture>
+                        <p class="caption">Create Custom Quest</p>
+                    </div>
+                    <div class="col-md-4">
+                        <picture>
+                            <source srcset="img/turfquest/high-wireframes/side-quests-sm.png" media="(max-width:767px)">
+                            <img class="wireframe" src="img/turfquest/high-wireframes/side-quests-lg.png" alt="Side Quests">
+                        </picture>
+                        <p class="caption">Scheduling Poll</p>
+                    </div>
+                </div>
+
+                <h3>The Latest Prototype</h3>
+                <div class="center">
+                    <p>Try out the prototype yourself!</p>
+                    <!-- Prototype -->
+                    <iframe class="prototype" id="turfquest-prototype" src="https://xd.adobe.com/embed/d9ee888d-8cdd-415b-98ec-fa4b3c894c74-8cbd/" allowfullscreen></iframe>
+                    <p><span id="turfquest-clickthru">Click through above or</span></p>
+                    <div class="button-parent">
+                        <a class="button" href="https://xd.adobe.com/view/d9ee888d-8cdd-415b-98ec-fa4b3c894c74-8cbd/">Check it out here!</a>
+                    </div>
+
+                    <p class="back-to-top"><a href="#table-of-contents">Back to Top</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer id="contact">
+        <div>
+            <h2>Contact Me</h2>
+            <p>
+                <!-- Invitation Text -->
+                Like my work? Call me at <a href="tel:2033059265">(203) 305-9265</a>.
+            </p>
+            <p>
+                Prefer Email?
+            </p>
             <div>
-                <h2>Contact Me</h2>
-                <p>     <!-- Invitation Text -->
-                    Like my work? Call me at <a href="tel:2033059265">(203) 305-9265</a>.
-                </p>
-                <p>
-                    Prefer Email?
-                </p>
-                <div>   <!-- Send Email -->
-                    <a href="mailto:babraham341@gmail.com" class="button contact">Email me</a>
-                </div>
-                <div>   <!-- Social Media Links -->
-                    <a href="https://www.linkedin.com/in/brett-abraham/" target="_blank"><img
-                        class="social-logo" id="linkedin" src="img/linkedin.png" alt="LinkedIn Logo"></a>
-                    <a href="https://twitter.com/infantgrandpa" target="_blank"><img
-                        class="social-logo" id="twitter" src="img/twitter.png" alt="Twitter Logo" ></a>
-                </div>
-                <p>
-                    Copyright Brett Abraham 2021
-                </p>
+                <!-- Send Email -->
+                <a href="mailto:babraham341@gmail.com" class="button contact">Email me</a>
             </div>
-        </footer>
+            <div>
+                <!-- Social Media Links -->
+                <a href="https://www.linkedin.com/in/brett-abraham/" target="_blank"><img class="social-logo" id="linkedin" src="img/linkedin.png" alt="LinkedIn Logo"></a>
+                <a href="https://twitter.com/infantgrandpa" target="_blank"><img class="social-logo" id="twitter" src="img/twitter.png" alt="Twitter Logo"></a>
+            </div>
+            <p>
+                Copyright Brett Abraham 2021
+            </p>
+        </div>
+    </footer>
 
-        <script
-          src="https://code.jquery.com/jquery-3.6.0.min.js"
-          integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-          crossorigin="anonymous"></script>
-        <script src="js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 
-    </body>
-    </html>
+</body>
+
+</html>
