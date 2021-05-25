@@ -302,6 +302,17 @@ nav>ul>li>a:focus {
     width: 100%;
 }
 
+#rundown div {
+  margin: 5px;
+}
+#rundown>div>div>h4 {
+  margin: 0;
+}
+#rundown>div>div>p {
+  margin: 0;
+  text-align: center;
+}
+
 #goal>div {
     text-align: center;
     padding: 5px 0;
