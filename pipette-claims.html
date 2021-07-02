@@ -122,7 +122,89 @@
             </div>
 
             <div class="section" id="overview">
-
+              <h2>Background</h2>
+                <p>
+                  During this time, I was working for Unity Lab Services,
+                  a division of Thermo Fisher Scientific that works onsite with customers to provide lab support.
+                  As pipette coordinator, my responsibilities included scheduling and preparing the client’s pipette instruments
+                  for their annual calibration while ensuring all records were kept to compliance.
+                </p>
+            </div>
+            <div class="section" id="initial-designs">
+              <h2>Initial Designs</h2>
+              <h3>Design Considerations</h3>
+              <p>
+                Before any wireframes could be designed, I needed to plan out how it would work.
+              </p>
+              <p>
+                To make it as easy as possible for researchers to claim pipettes,
+                I wanted to allow them the do so using their pipettes’ serial or asset (our identifier) number.
+                With COVID-19, however, many researchers would only be onsite when they needed to be in the lab,
+                and I couldn’t expect them to make this a priority while working on their experiments.
+              </p>
+              <p>
+                To alleviate this issue, I chose to allow researchers to give us the physical location of their
+                pipettes along with an estimate of how many they had there,
+                along with any other identifying information they could provide.
+                With that information, I would then be able to reconcile that with our inventory on
+                my own to ensure we matched the pipettes to the correct owner.
+              </p>
+              <p>
+                In addition to this, I had a few more requirements for this application:
+                <ol>
+                  <li>Pull from our existing inventory records</li>
+                  <li>Accessible by anyone within the company</li>
+                  <li>No permission requests</li>
+                  <li>Save the user's email and name with every submission</li>
+                </ol>
+              </p>
+              <p>
+                Due to these considerations,
+                I decided the fastest and easiest method of implementation would be to use Microsoft PowerApps.
+                The only issue, however, would be that I had never personally used this method before.
+              </p>
+            </div>
+            <h3>Wireframes</h3>
+            <p>
+              As this was my first foray into PowerApps,
+              I played it very safe on the earliest wireframes.
+              While I had never designed for PowerApps,
+              I had used a few and even ran some user testing on one before.
+              I stuck to what I knew it could do with no frills,
+              which resulted in the below mid-fidelity wireframes.
+            </p>
+            <!-- Mid-Fidelity Wireframes -->
+            <div class="row">
+                <div class="col-md-6">
+                    <picture>
+                        <source srcset="img/pipette-claims/mid-wireframes/entry-sm.png" media="(max-width:767px)">
+                        <img class="wireframe" src="img/pipette-claims/mid-wireframes/entry-lg.png" alt="Home Screen">
+                    </picture>
+                    <p class="caption">Home Screen</p>
+                </div>
+                <div class="col-md-6">
+                    <picture>
+                        <source srcset="img/pipette-claims/mid-wireframes/number-sm.png" media="(max-width:767px)">
+                        <img class="wireframe" src="img/pipette-claims/mid-wireframes/number-lg.png" alt="Lookup by Number">
+                    </picture>
+                    <p class="caption">Lookup by Number</p>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                  <picture>
+                      <source srcset="img/pipette-claims/mid-wireframes/entry-sm.png" media="(max-width:767px)">
+                      <img class="wireframe" src="img/pipette-claims/mid-wireframes/entry-lg.png" alt="Home Screen">
+                  </picture>
+                  <p class="caption">Home Screen</p>
+              </div>
+              <div class="col-md-6">
+                  <picture>
+                      <source srcset="img/pipette-claims/mid-wireframes/entry-sm.png" media="(max-width:767px)">
+                      <img class="wireframe" src="img/pipette-claims/mid-wireframes/entry-lg.png" alt="Home Screen">
+                  </picture>
+                  <p class="caption">Home Screen</p>
+              </div>
             </div>
 
         </main>
