@@ -45,7 +45,7 @@
 
                 <div class="container">
                   <h1>Pipette Claims App</h1>
-                  <img src="img\pipette-claims\pipette-users.png" alt="Pipette Claims Screenshot">
+                  <img src="img/pipette-claims/pipette-users.png" alt="Pipette Claims Screenshot">
                   <h2>Putting Pipettes with their People</h2>
                   <div class="row">
                     <div class="col-md-4">
@@ -121,7 +121,7 @@
                 </div>
             </div>
 
-            <div class="section" id="overview">
+            <div class="section">
               <h2>Background</h2>
                 <p>
                   During this time, I was working for Unity Lab Services,
@@ -151,61 +151,164 @@
               </p>
               <p>
                 In addition to this, I had a few more requirements for this application:
-                <ol>
-                  <li>Pull from our existing inventory records</li>
-                  <li>Accessible by anyone within the company</li>
-                  <li>No permission requests</li>
-                  <li>Save the user's email and name with every submission</li>
-                </ol>
               </p>
+              <ol>
+                <li>Pull from our existing inventory records</li>
+                <li>Accessible by anyone within the company</li>
+                <li>No permission requests</li>
+                <li>Save the user's email and name with every submission</li>
+              </ol>
               <p>
                 Due to these considerations,
                 I decided the fastest and easiest method of implementation would be to use Microsoft PowerApps.
                 The only issue, however, would be that I had never personally used this method before.
               </p>
-            </div>
-            <h3>Wireframes</h3>
-            <p>
-              As this was my first foray into PowerApps,
-              I played it very safe on the earliest wireframes.
-              While I had never designed for PowerApps,
-              I had used a few and even ran some user testing on one before.
-              I stuck to what I knew it could do with no frills,
-              which resulted in the below mid-fidelity wireframes.
-            </p>
-            <!-- Mid-Fidelity Wireframes -->
-            <div class="row">
+              <h3>Wireframes</h3>
+              <p>
+                As this was my first foray into PowerApps,
+                I played it very safe on the earliest wireframes.
+                While I had never designed for PowerApps,
+                I had used a few and even ran some user testing on one before.
+                I stuck to what I knew it could do with no frills,
+                which resulted in the below mid-fidelity wireframes.
+              </p>
+              <!-- Mid-Fidelity Wireframes -->
+              <div class="row">
+                  <div class="col-md-6">
+                      <picture>
+                          <source srcset="img/pipette-claims/mid-wireframes/entry-sm.png" media="(max-width:767px)">
+                          <img class="wireframe" src="img/pipette-claims/mid-wireframes/entry-lg.png" alt="Home Screen">
+                      </picture>
+                      <p class="caption">Home Screen</p>
+                  </div>
+                  <div class="col-md-6">
+                      <picture>
+                          <source srcset="img/pipette-claims/mid-wireframes/number-sm.png" media="(max-width:767px)">
+                          <img class="wireframe" src="img/pipette-claims/mid-wireframes/number-lg.png" alt="Lookup by Number">
+                      </picture>
+                      <p class="caption">Lookup by Number</p>
+                  </div>
+              </div>
+              <div class="row">
                 <div class="col-md-6">
                     <picture>
-                        <source srcset="img/pipette-claims/mid-wireframes/entry-sm.png" media="(max-width:767px)">
-                        <img class="wireframe" src="img/pipette-claims/mid-wireframes/entry-lg.png" alt="Home Screen">
+                        <source srcset="img/pipette-claims/mid-wireframes/other-sm.png" media="(max-width:767px)">
+                        <img class="wireframe" src="img/pipette-claims/mid-wireframes/other-lg.png" alt="By General Info">
                     </picture>
-                    <p class="caption">Home Screen</p>
+                    <p class="caption">By General Info</p>
                 </div>
                 <div class="col-md-6">
                     <picture>
-                        <source srcset="img/pipette-claims/mid-wireframes/number-sm.png" media="(max-width:767px)">
-                        <img class="wireframe" src="img/pipette-claims/mid-wireframes/number-lg.png" alt="Lookup by Number">
+                        <source srcset="img/pipette-claims/mid-wireframes/list-sm.png" media="(max-width:767px)">
+                        <img class="wireframe" src="img/pipette-claims/mid-wireframes/list-lg.png" alt="List">
                     </picture>
-                    <p class="caption">Lookup by Number</p>
+                    <p class="caption">List</p>
                 </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                  <picture>
-                      <source srcset="img/pipette-claims/mid-wireframes/other-sm.png" media="(max-width:767px)">
-                      <img class="wireframe" src="img/pipette-claims/mid-wireframes/other-lg.png" alt="By General Info">
-                  </picture>
-                  <p class="caption">By General Info</p>
-              </div>
-              <div class="col-md-6">
-                  <picture>
-                      <source srcset="img/pipette-claims/mid-wireframes/list-sm.png" media="(max-width:767px)">
-                      <img class="wireframe" src="img/pipette-claims/mid-wireframes/list-lg.png" alt="List">
-                  </picture>
-                  <p class="caption">List</p>
               </div>
             </div>
+
+            <div class="section" id="building">
+              <h2>Building the Application</h2>
+              <p>
+                I wanted to start building as soon as possible.
+                I needed to make sure that what I had in mind would actually work and
+                that I could create it within a reasonable timeframe.
+              </p>
+              <p>
+                Getting the first version of the application built was simple.
+                PowerApps wasn’t difficult to learn,
+                although I had to ignore a lot of my programming experience to understand how to assign values to anything.
+              </p>
+              <p>
+                I opted to build only two screens: the “By Number” lookup and the “By Other” lookup.
+                The “By Number” would just switch a few controls between Asset and Serial number to simplify everything.
+                The biggest challenge was getting the drawer to work – but it wouldn’t be anything compared to the challenges I would face later on.
+              </p>
+              <p>
+                I used a Microsoft Excel Online spreadsheet as the data source:
+                one worksheet held our pipette inventory while another held all submissions.
+                After a few days, everything seemed to be working well and I was pretty satisfied with my quick work.
+              </p>
+            </div>
+            <div class="section" id="improving">
+              <h2>Improving the Design</h2>
+              <p>
+                With things working, I turned back to the UX and UI.
+                I had made the recent realization that if this were to be client-facing (which is not something we do often),
+                it needed to be good.
+                Not only did it need to work,
+                but it needed to be easy to use and be visually appealing.
+              </p>
+              <p>
+                This meant it was time to return to Adobe XD.
+                I realized the system would be better built using flat navigation rather than the basic hierarchical navigation that was currently in place,
+                which causes a small disconnect between each lookup method.
+                To do so,
+                I removed the “Choose Lookup Method” screen and opted to make the “Lookup by Asset Number” the
+                first screen users see upon opening the app,
+                which would also quickly telegraph that this was our preferred method of communication.
+              </p>
+              <p>
+                I performed some quick user tests and made some changes to the layout:
+                I distinguished the most important information from other info,
+                added a location summary to the drawer,
+                and clarified the plus button’s functionality.
+                After adding a color scheme,
+                I had finished what would be the final wireframes of the project.
+              </p>
+              <!-- High-Fidelity Wireframes -->
+              <div class="row">
+                  <div class="col-md-6">
+                      <picture>
+                          <source srcset="img/pipette-claims/high-wireframes/number-sm.png" media="(max-width:767px)">
+                          <img class="wireframe" src="img/pipette-claims/high-wireframes/number-lg.png" alt="Lookup by Number">
+                      </picture>
+                      <p class="caption">Lookup by Number</p>
+                  </div>
+                  <div class="col-md-6">
+                      <picture>
+                          <source srcset="img/pipette-claims/high-wireframes/other-sm.png" media="(max-width:767px)">
+                          <img class="wireframe" src="img/pipette-claims/high-wireframes/other-lg.png" alt="Lookup by Other">
+                      </picture>
+                      <p class="caption">Lookup by Other</p>
+                  </div>
+              </div>
+            </div>
+            <div class="section" id="challenge">
+              <h2>The Challenges</h2>
+              <p>
+                Bringing this design into PowerApps was much more challenging than anticipated.
+                <strong>All</strong> of these challenges were caused because I wanted to make sure that my
+                users would have the best possible experience with this app –
+                it all took time, but was worth it.
+              </p>
+              <h3>Drop-Shadows</h3>
+              <p>
+                The first issue I ran into involved drop-shadows:
+                none of the pre-built controls supported them.
+                To get around this, I created HTML text objects and styled them using inline CSS.
+                I then had to size these twice - once as an HTML object and once within the PowerApps editor.
+              </p>
+              <h3>Icons and Hover Controls</h3>
+              <p>
+                The next issue was icons.
+                PowerApps has a selection of icons that Microsoft has designed and programmed
+                to work as you would expect:
+                icons can change upon selection, hover, and disable.
+                These icons are skinny, flat, and minimalist, and ultimately, not my style.
+                I only had 2 icons – one of which is on one of the most important controls within the app –
+                so I wanted them to be clear and noticeable.
+                However, PowerApps only allows you to import images,
+                it doesn’t allow you to make them work like icons,
+                meaning I couldn’t make them show feedback when users interacted with them.
+              </p>
+              <p>
+                On top of that, I couldn’t make the HTML text object change because it too didn’t
+                have a hover control.
+              </p>
+              <h3>Animations</h3>
+            </div>
+
 
         </main>
 
