@@ -43,7 +43,7 @@ p {
     margin: auto;
 }
 
-ul {
+ul, ol {
     max-width: 500px;
     margin: auto;
 }
