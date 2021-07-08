@@ -275,6 +275,15 @@ nav>ul>li>a:focus {
     border-bottom: 1px solid #455959;
 }
 
+.project-image {
+  margin: auto;
+}
+
+.project-image > img {
+  border-radius: 10px;
+  max-height: 400px;
+}
+
 /*~~ ABOUT PAGE SECTIONS */
 #skills-tools>div>h3 {
     text-align: left;
@@ -287,6 +296,10 @@ nav>ul>li>a:focus {
 
 #my-story>.button-parent {
     margin: 10px 0;
+}
+
+#my-picture>img {
+  border-radius: 10px;
 }
 
 /*~~ PROJECT PAGE SECTIONS */
@@ -369,6 +382,16 @@ nav>ul>li>a:focus {
     font-size: 0.85em;
     font-family: montserrat, sans-serif;
     font-weight: 400;
+}
+
+.overview-list>ul {
+  list-style-type: none;
+  text-align: left;
+  margin: 0 0 0 20px;
+  padding-left: 0;
+}
+.overview>div>div>div>img {
+  margin: auto;
 }
 
 /*~~ BUTTONS */
@@ -625,6 +648,7 @@ Medium devices (640px and larger)
         margin-right: auto;
     }
 
+
     /*~~MID - ABOUT */
     #my-picture {
         float: left;
@@ -807,6 +831,10 @@ Large devices (1024px or larger)
 
     .col-lg-12 {
         width: 100%;
+    }
+
+    .project-image > img {
+      width: auto;
     }
 }
 
