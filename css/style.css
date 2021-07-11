@@ -399,6 +399,7 @@ nav>ul>li>a:focus {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
 }
 
 .button {
@@ -451,6 +452,21 @@ nav>ul>li>a:focus {
     opacity: 0.5;
     text-decoration: none;
 }
+
+.coming-soon {
+  background-color: #C8C8C8;
+  color: #696969;
+  border-color: #696969;
+}
+
+.coming-soon:hover,
+.coming-soon:focus {
+    color: #696969;
+    opacity: 1;
+    text-decoration: none;
+}
+
+
 
 /*~~ WIREFRAMES */
 .wireframe {
